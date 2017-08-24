@@ -12,7 +12,7 @@ double targetSpeed = minSpeed + (1. - fabs(steer_value)) * (maxSpeed - minSpeed)
 
 ## Parameter tuning
 
-The tuning of the parameters I performed manually because the simulator did not allow for too much automation, eg. when car leaves track simulation needs to be restarted and its not obvious when a lap is completed to try a new set of parameters. So I rather performed a manual twiddle procedure evaluating how the car behaved visually.
+The tuning of the parameters I performed manually because the simulator did not allow for too much automation, eg. when car leaves track simulation needs to be restarted and its not obvious when a lap is completed to try a new set of parameters. So I rather performed a manual twiddle procedure evaluating how the car behaved visually. The parameters I passed in as command line arguments, so I could quickly update the parameters by restarting the controller process with updated parameters while the simulation was still running.
 
 I tried to make the control as humanlike as possible, ie. minimal oscilations, optimal turns and also go as fast as possible without leaving the track.
 
