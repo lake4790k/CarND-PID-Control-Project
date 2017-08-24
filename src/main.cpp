@@ -33,9 +33,9 @@ int main(int n, char **args) {
     uWS::Hub h;
 
     double kp = 0.1;
-    double kd = 3.;
-    double minSpeed = 30;
-    double maxSpeed = 75;
+    double kd = 2.5;
+    double minSpeed = 50;
+    double maxSpeed = 80;
 
     if (n > 1) {
         kp = std::stod(args[1]);
